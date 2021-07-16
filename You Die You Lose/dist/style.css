@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:700');
+
+* {
+	user-select: none;
+}
+
+body {
+	background: #7a8f92;
+	font-family: Quicksand;
+	color: #b4c7ca;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+#i {
+	position: fixed;
+	left: 1pc;
+	top: 1pc;
+	font-size: calc(2vw + 2vh);
+	text-shadow: 0px .2pc 0px #334143;
+	z-index: 2;
+	margin: 0;
+}
+
+.platform {
+	position: absolute;
+	background: #b4c6c7;
+	border-radius: 1pc;
+	box-shadow: 0px .5pc 0px #334143;
+}
+
+.spike {
+	position: absolute;
+	background: url("https://dl.dropboxusercontent.com/s/xfq2lph3bt5sxf1/spike.svg");
+}
+
+.friend, .player {
+	position: absolute;
+	width: 3pc;
+	height: 3pc;
+	background: #B8D8D8;
+	border-radius: .25pc;
+	text-align: center;
+	overflow: hidden;
+	vertical-align: middle;
+	line-height: 2.6pc;
+	font-size: 2em;
+	font-weight: bolder;
+}
+
+.player {
+	background: #000000;
+}
+
+.grave {
+	position: absolute;
+	background: #3d5f64;
+	width: 4pc;
+	height: 3pc;
+	border-bottom: none;
+	border-top-left-radius: 1pc;
+	border-bottom-left-radius: 1pc;
+	text-align: center;
+	overflow: hidden;
+	vertical-align: middle;
+	line-height: 2.5pc;
+	font-size: 2em;
+	transform: rotate(90deg);
+	z-index: -1;
+}
+
+.goal {
+	background: repeating-linear-gradient(
+		45deg,
+		#EEF5DB,
+		#EEF5DB 1pc,
+		#D2D8C0 1pc,
+		#D2D8C0 2pc
+	);
+}
